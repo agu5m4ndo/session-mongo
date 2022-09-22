@@ -2,8 +2,7 @@ const { options } = require('../options/mariadb')
 const knex = require('knex')(options);
 
 //Me permite controlar las tablas
-const Contenedor = require('../public/classes/contenedor');
-
+const Contenedor = require('../src/contenedores/contenedor');
 
 //creo la tabla para productos en mysql si esta no existe
 if (!knex.schema.hasTable('productos')) {
